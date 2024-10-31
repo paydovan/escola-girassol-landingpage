@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/output.css">
     <title>Escola Girassol</title>
 </head>
-<body>
-    <main class="h-screen">
-        <div class="bg-[#E9C033] w-full h-12 relative">
+<body class="">
+    <main class="bg-kids bg-no-repeat bg-cover h-screen flex flex-col overflow-hidden">
+        <div class="relative z-20">
             <!-- Navbar -->
-            <nav class="bg-[#E9C033] px-4 py-2 flex justify-between items-center relative z-10 md:hidden">
+            <nav class="bg-[#E9C033] px-4 py-2 flex justify-between items-center relative z-10 lg:hidden">
                 <div class="text-white text-lg font-bold">Escola Girassol</div>
                 <!-- Hamburger Icon -->
                 <button id="menu-btn" class="text-white focus:outline-none">
@@ -31,8 +31,37 @@
                     <a href="#" class="text-white text-lg">Fale Conosco</a>
                 </div>
             </nav>
+            <nav class="p-8 max-w-7xl mx-auto hidden lg:flex lg:items-center lg:justify-center">
+                <div class="bg-white px-4 py-5 rounded-2xl inline-flex items-center justify-around gap-4 relative">
+                    <div class="absolute bg-white p-6 rounded-full -left-16">
+                        <img src="src/images/bmw-logo.svg" alt="" class="h-14">
+                    </div>
+                    <div class="space-x-6 ml-10"> <!-- Aqui, adicionei flex para o div que contém os links -->
+                        <a href="#" class="text-[#467448] text-lg">Ínicio</a>
+                        <a href="#" class="text-[#467448] text-lg">Serviços</a>
+                        <a href="#" class="text-[#467448] text-lg">Diretora</a>
+                        <a href="#" class="text-[#467448] text-lg">Consultas</a>
+                        <a href="#" class="text-[#467448] text-lg">Feedback</a>
+                        <a href="#" class="text-[#467448] text-lg">Fale Conosco</a>
+                    </div>
+                </div>
+            </nav>                       
+            <!-- Círculos de fundo -->
             <div class="bg-[#E9C033] size-[32rem] rounded-full absolute -left-48 -top-[24rem] -z-10"></div>
             <div class="bg-[#E9D133] size-[34rem] rounded-full absolute -left-48 -top-[24rem] -z-20"></div>
+        </div>
+
+        <section class="relative z-0 h-5/6 flex items-center justify-center flex-col flex-1 lg:justify-start lg:pt-16">
+            <div class="max-w-7xl mx-auto">
+                <h1 class="text-5xl font-bold text-[#E9C033] text-center lg:text-7xl">Escola Girassol</h1>
+                <div class="p-4">
+                    <p class="text-center bg-white/30 rounded-md p-4 text-white shadow text-lg max-w-[800px] lg:text-2xl">A Escola Girassol é uma escola de príncipios cristãos, com o foco no aprendizado, diversão, educação e no desenvolvimento pessoal tanto quanto cognitivo motor e psico das nossas crianças de forma lúdica.</p>
+                </div>
+            </div>
+        </section>
+        <div class="relative">
+           <div class="bg-[#E9C033] size-[32rem] rounded-full absolute -right-56 -bottom-96 z-10"></div>
+           <div class="bg-[#E9D133] size-[34rem] rounded-full absolute -right-56 -bottom-96"></div>
         </div>
     </main>
 
