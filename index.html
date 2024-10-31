@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/output.css">
+    <title>Escola Girassol</title>
+</head>
+<body>
+    <main class="h-screen">
+        <div class="bg-[#E9C033] w-full h-12 relative">
+            <!-- Navbar -->
+            <nav class="bg-[#E9C033] px-4 py-2 flex justify-between items-center relative z-10 md:hidden">
+                <div class="text-white text-lg font-bold">Escola Girassol</div>
+                <!-- Hamburger Icon -->
+                <button id="menu-btn" class="text-white focus:outline-none">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+                <!-- Menu -->
+                <div id="menu" class="absolute top-full left-0 w-full bg-[#E9C033] flex flex-col items-center space-y-4 py-4 hidden z-10">
+                    <a href="#" class="text-white text-lg">Ínicio</a>
+                    <a href="#" class="text-white text-lg">Serviços</a>
+                    <a href="#" class="text-white text-lg">Diretora</a>
+                    <a href="#" class="text-white text-lg">Consultas</a>
+                    <a href="#" class="text-white text-lg">Feedback</a>
+                    <a href="#" class="text-white text-lg">Fale Conosco</a>
+                </div>
+            </nav>
+            <div class="bg-[#E9C033] size-[32rem] rounded-full absolute -left-48 -top-[24rem] -z-10"></div>
+            <div class="bg-[#E9D133] size-[34rem] rounded-full absolute -left-48 -top-[24rem] -z-20"></div>
+        </div>
+    </main>
+
+    <!-- Script para manipulação do menu -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const menu = document.getElementById('menu');
+        
+        menuBtn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
