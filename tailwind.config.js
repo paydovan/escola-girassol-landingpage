@@ -7,7 +7,13 @@ module.exports = {
         sans: ["Poppins", "sans-serif"],
       },
       backgroundImage: {
-        "kids": "url('/src/images/criancas.jpg')",
+        "kids": "url('/src/images/foto-hero.webp')",
+        "background3": "url('/src/images/background3.svg')",
+      },
+      colors: {
+        primaryYellow: "#E9C033",
+        customGreen: "#355d3d",
+        customGreenHover: '#16261a'
       }
     },
   },

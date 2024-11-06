@@ -6,14 +6,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="src/output.css">
     <title>Escola Girassol</title>
 </head>
-<body class="">
-    <main class="bg-kids bg-no-repeat bg-cover h-screen flex flex-col overflow-hidden">
+<body class="antialiased">
+    <!-- Botão do WhatsApp -->
+    <a href="#" target="_blank"
+    class="fixed bottom-4 right-4 bg-green-500 text-white px-4 py-3 rounded-full shadow-lg hover:bg-green-600 transition duration-300 z-50">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+    </a>
+    <!-- Fim do Botão do WhatsApp -->
+    <main class="bg-[#f8f3e9] h-screen flex flex-col overflow-hidden">
         <div class="relative z-20">
             <!-- Navbar -->
-            <nav class="bg-[#E9C033] px-4 py-2 flex justify-between items-center relative z-10 lg:hidden">
+            <nav class="bg-primaryYellow px-4 py-2 flex justify-between items-center relative z-10 lg:hidden">
                 <div class="text-white text-lg font-bold">Escola Girassol</div>
                 <!-- Hamburger Icon -->
                 <button id="menu-btn" class="text-white focus:outline-none">
@@ -22,7 +29,7 @@
                     </svg>
                 </button>
                 <!-- Menu -->
-                <div id="menu" class="absolute top-full left-0 w-full bg-[#E9C033] flex flex-col items-center space-y-4 py-4 hidden z-10">
+                <div id="menu" class="absolute top-full left-0 w-full bg-primaryYellow flex flex-col items-center space-y-4 py-4 hidden z-10">
                     <a href="#" class="text-white text-lg">Ínicio</a>
                     <a href="#" class="text-white text-lg">Serviços</a>
                     <a href="#" class="text-white text-lg">Diretora</a>
@@ -34,36 +41,106 @@
             <nav class="p-8 max-w-7xl mx-auto hidden lg:flex lg:items-center lg:justify-center">
                 <div class="bg-white px-4 py-5 rounded-2xl inline-flex items-center justify-around gap-4 relative">
                     <div class="absolute bg-white p-6 rounded-full -left-16">
-                        <img src="src/images/bmw-logo.svg" alt="" class="h-14">
+                        <img src="src/images/logo.svg" alt="" class="h-16">
                     </div>
                     <div class="space-x-6 ml-10"> <!-- Aqui, adicionei flex para o div que contém os links -->
-                        <a href="#" class="text-[#467448] text-lg">Ínicio</a>
-                        <a href="#" class="text-[#467448] text-lg">Serviços</a>
-                        <a href="#" class="text-[#467448] text-lg">Diretora</a>
-                        <a href="#" class="text-[#467448] text-lg">Consultas</a>
-                        <a href="#" class="text-[#467448] text-lg">Feedback</a>
-                        <a href="#" class="text-[#467448] text-lg">Fale Conosco</a>
+                        <a href="#" class="text-customGreen hover:text-customGreenHover text-lg">Ínicio</a>
+                        <a href="#" class="text-customGreen hover:text-customGreenHover text-lg">Serviços</a>
+                        <a href="#" class="text-customGreen hover:text-customGreenHover text-lg">Diretoria</a>
+                        <a href="#" class="text-customGreen hover:text-customGreenHover text-lg">Consultas</a>
+                        <a href="#" class="text-customGreen hover:text-customGreenHover text-lg">Feedback</a>
+                        <a href="#" class="text-customGreen hover:text-customGreenHover text-lg">Fale Conosco</a>
                     </div>
                 </div>
             </nav>                       
             <!-- Círculos de fundo -->
-            <div class="bg-[#E9C033] size-[32rem] rounded-full absolute -left-48 -top-[24rem] -z-10"></div>
-            <div class="bg-[#E9D133] size-[34rem] rounded-full absolute -left-48 -top-[24rem] -z-20"></div>
+            <div class="bg-primaryYellow size-[32rem] rounded-full absolute -left-48 -top-[24rem] -z-10"></div>
         </div>
-
-        <section class="relative z-0 h-5/6 flex items-center justify-center flex-col flex-1 lg:justify-start lg:pt-16">
-            <div class="max-w-7xl mx-auto">
-                <h1 class="text-5xl font-bold text-[#E9C033] text-center lg:text-7xl">Escola Girassol</h1>
+        <!-- hero section -->
+        <section class="h-5/6 flex items-center justify-center flex-col flex-1 ">
+            <div class="max-w-7xl mx-auto relative flex flex-col items-center ">
+                <h1 class="text-4xl font-bold textprmbg-primaryYellow text-center md:text-7xl z-[15]">
+                    <span class="text-primaryYellow">Escola Girassol:</span> <span class="">Aprendizado e Diversão em um Ambiente Cristão!</span>
+                </h1>
                 <div class="p-4">
-                    <p class="text-center bg-white/30 rounded-md p-4 text-white shadow text-lg max-w-[800px] lg:text-2xl">A Escola Girassol é uma escola de príncipios cristãos, com o foco no aprendizado, diversão, educação e no desenvolvimento pessoal tanto quanto cognitivo motor e psico das nossas crianças de forma lúdica.</p>
+                    <p class="text-center rounded-xl p-4 text-black text-lg max-w-[800px] lg:text-2xl">A Escola Girassol é uma escola de príncipios cristãos, com o foco no aprendizado, diversão, educação e no desenvolvimento pessoal tanto quanto cognitivo motor e psico das nossas crianças de forma lúdica.</p>
+                </div>
+                <div class="absolute hidden xl:block xl:left-0 xl:top-24">
+                    <img src="src/images/kid-arrow.png" alt="" class="w-44">
+                </div>
+                <div class="absolute hidden xl:block xl:right-0 xl:-top-36">
+                    <img src="src/images/kid2.png" alt="" class="w-44">
+                </div>
+                <div class="absolute -bottom-32 z-20 xl:hidden">
+                    <img src="src/images/arrow2.png" alt="" class="w-44">
                 </div>
             </div>
         </section>
         <div class="relative">
-           <div class="bg-[#E9C033] size-[32rem] rounded-full absolute -right-56 -bottom-96 z-10"></div>
-           <div class="bg-[#E9D133] size-[34rem] rounded-full absolute -right-56 -bottom-96"></div>
+           <div class="bg-primaryYellow size-[32rem] rounded-full absolute -right-56 -bottom-96 z-10"></div>
         </div>
     </main>
+    <!-- end hero section -->
+    <!-- seção serviços -->
+    <section class="relative flex justify-between bg-[#f8f3e9]">
+        <!-- Esquerda -->
+        <div class="">
+            <img src="src/images/wave-left.svg" alt="" class="h-[36rem]">
+        </div>
+    
+        <!-- Texto no centro (só no eixo X) -->
+        <div class="max-w-7xl absolute left-1/2 transform -translate-x-1/2 w-full h-full flex items-center">
+            <div class="">
+                <div class="flex gap-2 items-center justify-center  py-4">
+                    <div class="bg-customGreen flex-1 h-[2px] md:w-24"></div>
+                    <h2 class="text-4xl font-bold text-center">Sala de Aula</h2>
+                    <div class="bg-customGreen flex-1 h-[2px] md:w-24"></div>
+                </div>
+                <div class=" grid grid-cols-2 lg:grid-cols-4 p-4 gap-2 text-sm">
+                    <div class=" p-4 rounded-md text-center flex items-center justify-center border border-customGreen transition-all">
+                        <h3 class="text-customGreen font-bold md:text-2xl">MATERNAL I</h3>
+                    </div>
+                    <div class=" p-4 rounded-md text-center flex items-center justify-center border border-customGreen">
+                        <h3 class="text-customGreen font-bold md:text-2xl">MATERNAL II</h3>
+                    </div>
+                    <div class=" p-4 rounded-md text-center flex items-center justify-center border border-customGreen">
+                        <h3 class="text-customGreen font-bold md:text-2xl">ETAPA I</h3>
+                    </div>
+                    <div class=" p-4 rounded-md text-center flex items-center justify-center border border-customGreen">
+                        <h3 class="text-customGreen font-bold md:text-2xl">ETAPA II</h3>
+                    </div>
+                </div>
+                <div class="flex gap-2 items-center justify-center py-4">
+                    <div class="bg-customGreen flex-1 h-[2px] md:w-24"></div>
+                    <h2 class="text-4xl font-bold text-center">Extras</h2>
+                    <div class="bg-customGreen flex-1 h-[2px] md:w-24"></div>
+                </div>
+                <div class=" grid grid-cols-2 lg:grid-cols-4 p-4 gap-2 text-sm">
+                    <div class=" p-4 rounded-md text-center flex items-center justify-center border border-customGreen">
+                        <h3 class="text-customGreen font-bold md:text-2xl">APOIO ESCOLAR</h3>
+                    </div>
+                    <div class=" p-4 rounded-md text-center flex items-center justify-center border border-customGreen">
+                        <h3 class="text-customGreen font-bold md:text-2xl">ACOMPANHAMENTO NEUROPSICOLOGICO</h3>
+                    </div>
+                    <div class=" p-4 rounded-md text-center flex items-center justify-center border border-customGreen">
+                        <h3 class="text-customGreen font-bold md:text-2xl">DANÇA</h3>
+                    </div>
+                    <div class=" p-4 rounded-md text-center flex items-center justify-center border border-customGreen">
+                        <h3 class="text-customGreen font-bold md:text-2xl">JIU-JITSU</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Direita -->
+        <div class="">
+            <img src="src/images/wave-right.svg" alt="" class="h-[36rem]">
+        </div>
+    </section>       
+    <!-- fim seção serviços -->
+     <section class="bg-background3 bg-no-repeat bg-cover bg-center h-[37rem] flex items-center justify-center">
+        <div class="max-w-7xl bg-blue-400">.sadsdad</div>
+     </section>
 
     <!-- Script para manipulação do menu -->
     <script>
