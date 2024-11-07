@@ -853,7 +853,7 @@ video {
 }
 
 .bg-background3 {
-  background-image: url('/src/images/background3.svg');
+  background-image: url('src/images/background3.svg');
 }
 
 .bg-cover {
