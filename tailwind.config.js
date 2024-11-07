@@ -8,7 +8,7 @@ module.exports = {
       },
       backgroundImage: {
         "kids": "url('/src/images/foto-hero.webp')",
-        "background3": "url('/src/images/background3.svg')",
+        "background3": "url('src/images/background3.svg')",
       },
       colors: {
         primaryYellow: "#E9C033",
